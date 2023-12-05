@@ -111,10 +111,8 @@ class Fiskal:
             
                 # segue para clicar na exportação
                 download_button = driver.find_element(By.XPATH, '//a[contains(@href, "challenge.xlsx")]')
-                if (download_button):
-                    print('encontrou download')
-
                 download_button.click()
+                print('Download do arquivo sendo realizado...')
 
                 time.sleep(2)
 
